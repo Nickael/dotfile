@@ -8,20 +8,20 @@ else install it by doing so `./install.sh`
 # DEPENDENCIES
 
 To use this configuration correctly, you need to install this cli programms
-| Programms |
-| --- |
-| gcc |
-| cmake |
-| clang |
-| python |
-| pip |
-| powerline-status |
-| php-cli |
-| phpcs |
-| node |
-| npm |
-| cpplint |
-| jslint |
+| - | Programms | - |
+| | --- | |
+| | gcc | |
+| | cmake | |
+| | clang | |
+| | python | |
+| | pip | |
+| | powerline-status | |
+| | php-cli | |
+| | phpcs | |
+| | node | |
+| | npm | |
+| | cpplint | |
+| | jslint | |
 
 
 # GOOD TO KNOW
