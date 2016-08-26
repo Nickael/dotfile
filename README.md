@@ -22,7 +22,7 @@ To use this configuration correctly, you need to install this cli programms
 | | npm | |
 | | cpplint | |
 | | jslint | |
-
+**gcc**, **cmake**, **clang**, **python**, **pip**, **powerline**, **cpplint**, **php-cli**, **phpcs**, **nodejs**, **npm**, **jslint**
 
 # GOOD TO KNOW
 
