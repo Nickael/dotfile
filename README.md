@@ -1,7 +1,8 @@
 # GETTING STARTED
 ---
 If you want to install the emacs conf manually,
-just make a back up of your old emacs conf by : `mv ~/.emacs ~/.emacs.back && mv -f ~/.emacs.d/ ~/.emacs.d.back/`
+just make a back up of your old emacs conf by :
+`mv ~/.emacs ~/.emacs.back && mv -f ~/.emacs.d/ ~/.emacs.d.back/`
 else install it by doing so `./install.sh`
 ---
 # DEPENDENCIES
