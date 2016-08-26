@@ -1,12 +1,12 @@
 # GETTING STARTED
----
+
 If you want to install the emacs conf manually,
 just make a back up of your old emacs conf by :
 `mv ~/.emacs ~/.emacs.back && mv -f ~/.emacs.d/ ~/.emacs.d.back/`
 else install it by doing so `./install.sh`
----
+
 # DEPENDENCIES
----
+
 To use this configuration correctly, you need to install this cli programms
 |Programms|
 |---------:|
@@ -23,9 +23,9 @@ To use this configuration correctly, you need to install this cli programms
 |cpplint|
 |jslint|
 
-___
+
 # GOOD TO KNOW
----
+
 ## Getting powerline fonts
 Make sure you change you shell default font to powerline fonts. [Get all of them here](https://github.com/powerline/fonts)
 ## Getting lastest NodeJS version
