@@ -9,7 +9,7 @@ else install it by doing so `./install.sh`
 
 To use this configuration correctly, you need to install this cli programms
 |Programms|
-|---------:|
+|---|
 |gcc|
 |cmake|
 |clang|
