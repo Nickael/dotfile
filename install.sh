@@ -79,6 +79,20 @@ hash cpplint  >/dev/null 2>&1 || {
     exit 1
 }
 
+# Cloning remote repository
+
+if [ "$OSTYPE" = cygwin ]; then
+    if git --version | grep msysgit > /dev/null; then
+	echo "Error: Windows/MSYS Git is not supported on Cygwin"
+	echo "Error: Make sure the Cygwin git package is installed and is first on the path"
+	exit 1
+    fi
+fi
+env git clone --depth=1 https://github.com/Nickael/dotfile ~/.dotfile || {
+    printf "Error: git clone of dofile repo failed\n"
+    exit 1
+}
+
 # Check if any emacs config was already installed
 
 if [ -d "~/.emacs.d" ] || [-e "~/.emacs"] || [-h "~/.emacs"]; then
@@ -88,7 +102,9 @@ if [ -d "~/.emacs.d" ] || [-e "~/.emacs"] || [-h "~/.emacs"]; then
     fi
     printf "${YELLOW}${BOLD}moving old configuration !${NORMAL}\n"
     mv ~/.emacs ~/.emacs.bak && mv -f ~/.emacs.d ~/.emacs.d.bak
+    mv ~/.dotfile/.emacs ~/.emacs && mv -f ~/.dotfile/.emacs.d ~/.emacs.d
 fi
+
 
 ################################################################################################################################################################
 # powerline wide install
