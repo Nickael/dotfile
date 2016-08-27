@@ -17,3 +17,13 @@ Make sure you change you shell default font to powerline fonts. [Get all of them
 ## Getting lastest NodeJS version
 
 Make sure to choose the right one for your distrib. [Check them here](https://nodejs.org/en/download/package-manager/#freebsd-and-openbsd)
+
+# BASIC INSTALLATION
+
+## Via curl
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Nickael/dotfile/master/install.sh)"
+
+## Via wget
+
+sh -c "$(wget https://raw.githubusercontent.com/Nickael/dotfile/master/install.sh -O -)"
