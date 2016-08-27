@@ -1,4 +1,4 @@
-main {
+main() {
 if which tput >/dev/null 2>&1; then
     ncolors=$(tput colors)
 fi
