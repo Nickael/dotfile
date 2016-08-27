@@ -127,7 +127,12 @@ main() {
 
 main
 
-cp ~/.dotfile/.emacs ~/.emacs
-cp -fr ~/.dotfile/.emacs.d ~/.emacs.d
-
+mv ~/.dotfile/.emacs ~/.emacs
+mv -f ~/.dotfile/.emacs.d ~/.emacs.d
+rm -fr ~/.dotfile
+read -p "Would you like to launch emacs ? y or n \n" yn
+if [$yn != "y"]; then
+    echo "Thanks for using my configuration do not forget to contribut if you think you can add more features to it\n make a pull request\n"
+    exit 1
+fi
 env emacs -nw
