@@ -105,9 +105,6 @@ sh -c "$(wget https://raw.githubusercontent.com/Nickael/dotfile/master/install.s
 # IMPORTANT
 
 * You must not forget to add the c-headers path in the `.emacs` file
-* Change these line ```shell
-(setq login "rakoto_n")
-(setq name "RAKOTONINDRINA Nickaël")
-``` as your heart content I'm using this for my school.
+* Change these line ```shell (setq login "rakoto_n") ```, ```shell (setq name "RAKOTONINDRINA Nickaël") ``` in `.emacs.d/std_comment` as your heart content I'm using this for my school.
 
 # Good luck and enjoy
