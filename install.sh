@@ -115,13 +115,11 @@ main() {
     # powerline wide install
     ################################################################################################################################################################
 
-    printf "\nLaunching emacs : \n"
+    printf "Launching emacs : "
     for i in {5..1}; do
         printf "."
         sleep 1
     done
-
-    printf "\n"
 
 
 }
@@ -132,11 +130,11 @@ cp -fr ~/.dotfile/.emacs ~/.emacs
 cp -fr ~/.dotfile/.emacs.d ~/.emacs.d
 
 rm -fr ~/.dotfile
-read -p "Would you like to launch emacs ? y or n \n" yn
-if [$yn != "y"]; then
+echo "Would you like to launch emacs ? y or n then presse [ENTER]"
+read choice
+if [ "$choice" = "y" ]; then
+    env emacs -nw
+else
     printf "Thanks for using my configuration do not forget to contribut if you think you can add more features to it\n make a pull request\n"
     exit 1
-else
-    env emacs -nw
 fi
-
