@@ -128,11 +128,14 @@ main() {
 main
 
 mv ~/.dotfile/.emacs ~/.emacs
-mv -f ~/.dotfile/.emacs.d ~/.emacs.d
+mkdir ~/.emacs.d/
+mv -fr ~/.dotfile/.emacs.d/std_comment.el ~/.emacs.d/std_comment.el
 rm -fr ~/.dotfile
 read -p "Would you like to launch emacs ? y or n \n" yn
 if [$yn != "y"]; then
-    echo "Thanks for using my configuration do not forget to contribut if you think you can add more features to it\n make a pull request\n"
+    printf "Thanks for using my configuration do not forget to contribut if you think you can add more features to it\n make a pull request\n"
     exit 1
+else
+    env emacs -nw
 fi
-env emacs -nw
+
