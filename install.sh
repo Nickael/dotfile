@@ -108,7 +108,8 @@ main() {
             exit 1
         fi
         printf "${YELLOW}${BOLD}moving old configuration !${NORMAL}\n"
-         mv ~/.emacs ~/.emacs.bak && mv -f ~/.emacs.d ~/.emacs.d.bak
+        mv ~/.emacs ~/.emacs.bak
+	mv -f ~/.emacs.d ~/.emacs.d.bak
     fi
     ################################################################################################################################################################
     # powerline wide install
@@ -127,13 +128,8 @@ main() {
 
 main
 
-mv ~/.dotfile/.emacs ~/.emacs
-if [ -d "~/.emacs.d/" ]; then
-    mkdir ~/.emacs.d/
-    mv -fr ~/.dotfile/.emacs.d/std_comment.el ~/.emacs.d/std_comment.el
-else
-    mv -fr ~/.dotfile/.emacs.d/std_comment.el ~/.emacs.d/std_comment.el
-fi
+cp -fr ~/.dotfile/.emacs ~/.emacs
+cp -fr ~/.dotfile/.emacs.d ~/.emacs.d
 
 rm -fr ~/.dotfile
 read -p "Would you like to launch emacs ? y or n \n" yn
