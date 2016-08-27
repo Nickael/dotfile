@@ -129,11 +129,12 @@ main
 
 mv ~/.dotfile/.emacs ~/.emacs
 if [ -d "~/.emacs.d/" ]; then
-    mv -fr ~/.dotfile/.emacs.d/std_comment.el ~/.emacs.d/std_comment.el
-else
     mkdir ~/.emacs.d/
     mv -fr ~/.dotfile/.emacs.d/std_comment.el ~/.emacs.d/std_comment.el
+else
+    mv -fr ~/.dotfile/.emacs.d/std_comment.el ~/.emacs.d/std_comment.el
 fi
+
 rm -fr ~/.dotfile
 read -p "Would you like to launch emacs ? y or n \n" yn
 if [$yn != "y"]; then
