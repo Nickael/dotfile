@@ -108,8 +108,9 @@ main() {
             exit 1
         fi
         printf "${YELLOW}${BOLD}moving old configuration !${NORMAL}\n"
-        mv ~/.emacs ~/.emacs.bak && mv -f ~/.emacs.d ~/.emacs.d.bak
-        mv ~/.dotfile/.emacs ~/.emacs && mv -f ~/.dotfile/.emacs.d ~/.emacs.d
+        env mv ~/.emacs ~/.emacs.bak && mv -f ~/.emacs.d ~/.emacs.d.bak
+        env mv ~/.dotfile/.emacs ~/.emacs
+	env mv -f ~/.dotfile/.emacs.d ~/.emacs.d
     fi
 
 
