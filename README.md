@@ -22,8 +22,12 @@ Make sure to choose the right one for your distrib. [Check them here](https://no
 
 ## Via curl
 
-```sh -c "$(curl -fsSL https://raw.githubusercontent.com/Nickael/dotfile/master/install.sh)"```
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Nickael/dotfile/master/install.sh)"
+```
 
 ## Via wget
 
-```sh -c "$(wget https://raw.githubusercontent.com/Nickael/dotfile/master/install.sh -O -)"```
+```shell
+sh -c "$(wget https://raw.githubusercontent.com/Nickael/dotfile/master/install.sh -O -)"
+```
