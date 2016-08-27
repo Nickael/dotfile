@@ -110,10 +110,6 @@ main() {
         printf "${YELLOW}${BOLD}moving old configuration !${NORMAL}\n"
          mv ~/.emacs ~/.emacs.bak && mv -f ~/.emacs.d ~/.emacs.d.bak
     fi
-    cp ~/.dotfile/.emacs ~/.emacs
-    cp -fr ~/.dotfile/.emacs.d ~/.emacs.d
-
-
     ################################################################################################################################################################
     # powerline wide install
     ################################################################################################################################################################
@@ -126,7 +122,12 @@ main() {
 
     printf "\n"
 
-    env emacs -nw
+
 }
 
 main
+
+cp ~/.dotfile/.emacs ~/.emacs
+cp -fr ~/.dotfile/.emacs.d ~/.emacs.d
+
+env emacs -nw
