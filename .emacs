@@ -132,6 +132,11 @@
 (unless (package-installed-p 'web-mode)
   (package-refresh-contents)
   (package-install 'web-mode))
+;;; markdown mode
+
+(unless (package-installed-p 'markdown-mode)
+  (package-refresh-contents)
+  (package-install 'markdown-mode))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -378,4 +383,9 @@
    ((((type x)) (:inherit company-tooltip-selection :weight bold))
     (t (:inherit company-tooltip-selection)))))
 
+;;;
+;;; markdown mode
+;;;
+
+(require 'markdown-mode)
 ;;; emacs ends here
