@@ -102,7 +102,7 @@ main() {
 
     # Check if any emacs config was already installed
 
-    if [ -d "~/.emacs.d" ] || [-f "~/.emacs"]; then
+    if [ -d "~/.emacs.d" ] || [ -f "~/.emacs"]; then
 	read -p "${BLUE}An existing emacs configuration already exist do you want to continue ?\n y or n" yn
 	if [$yn != "y"]; then
 	    exit 1
@@ -117,7 +117,7 @@ main() {
     # powerline wide install
     ################################################################################################################################################################
 
-    printf"\nLaunching emacs : \n"
+    printf "\nLaunching emacs : \n"
     for i in {5..1}; do
 	printf "."
 	sleep 1
