@@ -20,15 +20,9 @@ main() {
 
     set -e
 
-    CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
-    if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
-        printf "${YELLOW}Zsh is not installed!${NORMAL} Please install zsh first!\n"
-        exit
-    fi
-    unset CHECK_ZSH_INSTALLED
 
     umask g-w,o-w
-    printf "${BLUE}Cloning Oh My Zsh...${NORMAL}\n"
+    printf "${BLUE}Cloning .emacs dotfile${NORMAL}\n"
 
     # check if git is installed
 
