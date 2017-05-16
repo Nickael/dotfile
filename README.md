@@ -93,13 +93,13 @@ Make sure you change you shell default font to powerline fonts. [Get all of them
 ## Via curl
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Nickael/dotfile/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Nickael/emacs.dotfile/master/install.sh)"
 ```
 
 ## Via wget
 
 ```shell
-sh -c "$(wget https://raw.githubusercontent.com/Nickael/dotfile/master/install.sh -O -)"
+sh -c "$(wget https://raw.githubusercontent.com/Nickael/emacs.dotfile/master/install.sh -O -)"
 ```
 
 # IMPORTANT
