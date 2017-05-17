@@ -66,7 +66,7 @@ main() {
     exit 1
   }
 
-  # Check if is installed
+  # Check if is cpplint installed
 
   hash cpplint  >/dev/null 2>&1 || {
     echo "${BOLD}${RED}Error: cpplint is not installed${NORMAL}\n"
