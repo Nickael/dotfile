@@ -82,7 +82,7 @@ main() {
             exit 1
         fi
     fi
-    env git clone --depth=1 https://github.com/Nickael/dotfile ~/.dotfile || {
+    env git clone --depth=1 https://github.com/Nickael/emacs.dotfile ~/.dotfile || {
         printf "Error: git clone of dofile repo failed\n"
         exit 1
     }
